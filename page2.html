@@ -3,7 +3,13 @@
 <html>
  <head>
     <title>리스트에서 자료 선택하기</title>
-     <script></script>
+     <script>
+        function drawImage() {
+            let f = document.getElementById("fruit");
+            let fimg = document.getElementById("fimg");
+            fimg.src = f.options[f.selectedIndex].value;
+        }
+     </script>
  </head>
     <body>
         주제 1 내가 좋아하는 과일 선택 <br>
