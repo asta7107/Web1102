@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+ <head>
+    <title>예제page3</title>
+     <script>
+        function keyDown() {
+            let text = document.getElementById("text");
+            text.value = "키를 눌렀습니다";
+        }
+        function keyUp() {
+            let text = document.getElementById("text");
+            text.value = "키를 뗐습니다";
+        }
+        function keyPress() {
+            let text = document.getElementById("text");
+            text.value = "키를 눌렀다 뗐습니다";
+        }
+     </script>
+ </head>
+    <body>
+        키리스너와 키 이벤트 속성 출력하기<br>
+        <hr>
+    텍스트 창에 키를 눌러 보세요 ALT SHIFT CTRL 키를 눌러도 이벤트 발생<br>
+    <input type="text" id="text" onkeydown="keyDown()" onkeyup="keyUp()" onkeypress="keyPress()">
+    <div id="div" style="background-color: aqua;" width:250ox; height:auto;>
+        </div>
+
+    </body>
+</html>
+ 
