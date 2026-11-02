@@ -5,17 +5,13 @@
     <title>예제page3</title>
      <script>
         function keyDown() {
-            let text = document.getElementById("text");
-            text.value = "키를 눌렀습니다";
+           let str=""; let div = document.getElementById("div");
+           div.innerHTML = "";
+           str += "e.key=" + e.key + "<br>";
+            str += "e.code=" + e.code + "<br>";
+            div.innerHTML = str;
         }
-        function keyUp() {
-            let text = document.getElementById("text");
-            text.value = "키를 뗐습니다";
-        }
-        function keyPress() {
-            let text = document.getElementById("text");
-            text.value = "키를 눌렀다 뗐습니다";
-        }
+        
      </script>
  </head>
     <body>
